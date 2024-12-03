@@ -38,10 +38,10 @@
             li::before {
                 content: "";
                 position: absolute;
-                top: -60px;
+                top: -80px;
                 left: 10%;
-                width: 250px;
-                height: 250px; 
+                width: 270px;
+                height: 270px; 
                 background-size: cover;
                 display: none;
             }
@@ -54,17 +54,65 @@
                 background-image: url(https://i1.sndcdn.com/artworks-9LyhrcKpUUw2FzrQ-WP622w-t500x500.jpg);
             }
 
+            #season2::before { 
+                content: "";
+                position: absolute;
+                top: -110px;
+                left: 10%;
+                width: 500px;
+                height: 300px; 
+                background-image: url(https://static.wikia.nocookie.net/lololoshhka/images/5/5f/%D0%98%D0%B3%D1%80%D0%B0%D0%91%D0%BE%D0%B3%D0%B0%D0%A4%D0%B8%D0%BD%D0%B0%D0%BB.jpg/revision/latest?cb=20230226074532&path-prefix=ru);
+                background-size: cover;
+                display: none;
+            }
+
+            #season2:hover::before {
+                display: block;
+            }
+
+            li:nth-child(3)::before {
+                background-image: url(https://i.pinimg.com/236x/8b/5f/4c/8b5f4c71df259ed885fba8a14c70c742.jpg);
+            }
+
+            li:nth-child(4)::before {
+                background-image: url(https://i1.sndcdn.com/artworks-UTIBgWFzSphc2CKh-HzfyBg-t500x500.jpg);
+            }
+
+            li:nth-child(5)::before {
+                background-image: url(https://реманга.орг/media/titles/thirteen-lights/58b66ef56aa938efad081421bb496b36.jpg);
+            }
+
+            #season6::before { 
+                content: "";
+                position: absolute;
+                top: -110px;
+                left: 10%;
+                width: 500px;
+                height: 300px; 
+                background-image: url(https://sun1-92.userapi.com/impf/NqoXLF4YqFIb7FvKDvN06SDL7WxG3UGfoKvekg/CeNGRPRQoKQ.jpg?size=1920x768&quality=95&crop=0,0,1280,511&sign=b70ddae7801428c06c1429e81c88c7df&type=cover_group);
+                background-size: cover;
+                display: none;
+            }
+
+            #season6:hover::before {
+                display: block;
+            }
+
+            li:nth-child(7)::before {
+                background-image: url(https://i.pinimg.com/originals/6d/70/f9/6d70f9bbd314f51d08548d19ec1fd340.jpg);
+            }
+
         </style>
     </head>
     <body>
         <h1>список сезонов для просмотра</h1>
         <ol>
             <li>новое поколение</li>
-            <li>игра бога</li>
+            <li id="season2">игра бога</li>
             <li>идеальный мир</li>
             <li>голос времени</li>
             <li>тринадцать огней</li>
-            <li>последняя реальность</li>
+            <li id="season6">последняя реальность</li>
             <li>сердце вселенной</li>
         </ol>
     </body>
