@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
         <style>
-
             a {
                 color: #32a9e0;
                 text-decoration: none;
@@ -21,10 +21,11 @@
                 color: #32a9e0;
             }
 
+            /* Общий фон для всех устройств */
             body {
                 text-align: center;
-                background-image: url(https://i.pinimg.com/736x/53/55/d9/5355d9b431afa61dd81062290ce009fe.jpg);
-                background-size: auto;
+                background-image: url(https://celes.club/uploads/posts/2023-12/1702973682_celes-club-p-oboi-s-lololoshkoi-vkontakte-4.jpg);
+                background-size: cover;
                 background-position: center;
                 background-attachment: fixed;
             }
@@ -39,11 +40,11 @@
 
             ol {
                 font-family: 'Poppins', sans-serif;
-              font-weight: 600;
-              font-size: 36px;
-              color: #32a9e0;
-              text-align: left;
-              display: inline-block;
+                font-weight: 600;
+                font-size: 36px;
+                color: #32a9e0;
+                text-align: left;
+                display: inline-block;
             }
 
             li {
@@ -105,7 +106,7 @@
                 position: absolute;
                 top: -110px;
                 left: 100%;
-                width: 500px;
+                width: 600px;
                 height: 300px; 
                 background-image: url(https://sun1-92.userapi.com/impf/NqoXLF4YqFIb7FvKDvN06SDL7WxG3UGfoKvekg/CeNGRPRQoKQ.jpg?size=1920x768&quality=95&crop=0,0,1280,511&sign=b70ddae7801428c06c1429e81c88c7df&type=cover_group);
                 background-size: cover;
@@ -120,18 +121,45 @@
                 background-image: url(https://i.pinimg.com/originals/6d/70/f9/6d70f9bbd314f51d08548d19ec1fd340.jpg);
             }
 
+            /* Медиазапрос для мобильных устройств */
+            @media (max-width: 768px) {
+                body {
+                    background-image: url(https://i.pinimg.com/originals/53/55/d9/5355d9b431afa61dd81062290ce009fe.jpg); /* Фон для мобильных */
+                }
+
+                li::before {
+                    top: -50px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 200px;
+                    height: 200px;
+                }
+
+                #season2::before, #season6::before {
+                    width: 250px;
+                    height: 150px;
+                }
+            }
+
+            /* Медиазапрос для больших экранов */
+            @media (min-width: 769px) {
+                body {
+                    background-image: url(https://celes.club/uploads/posts/2023-12/1702973682_celes-club-p-oboi-s-lololoshkoi-vkontakte-4.jpg); /* Фон для компьютеров */
+                    background-size: 90%;
+                }
+            }
         </style>
     </head>
     <body>
         <h1>список сезонов для просмотра</h1>
         <ol>
-            <li><a href="https://youtu.be/poIBDWp0fLI?si=J35-9PJvQhSuh7LC.html">новое поколение</a></li>
-            <li id="season2"><a href="https://youtu.be/070yG9XD4Ps?si=TMqq5GyYRbiIVIWP.html">игра бога</a></li>
-            <li><a href="https://youtu.be/j-56tTm3AXw?si=PuCYTSy5WYABsXI_.html">идеальный мир</a></li>
-            <li><a href="https://youtu.be/EM8I_SiTa90?si=p2EghG9Gr61imJaf.html">голос времени</a></li>
-            <li><a href="https://youtu.be/WcIEUMgWO5U?si=ryB_h13o_4QSxBKn.html">триндцать огней</a></li>
-            <li id="season6"><a href="https://youtu.be/ygqR7g_0M5o?si=Y8yvxqve45U5rh0w.html">последьная реальность</a></li>
-            <li><a href="https://youtu.be/380Q7gLWGvk?si=0C6fsn5aDWPryljY.html">сердце вселенной</a></li>
+            <li><a href="https://youtu.be/poIBDWp0fLI?si=J35-9PJvQhSuh7LC">новое поколение</a></li>
+            <li id="season2"><a href="https://youtu.be/070yG9XD4Ps?si=TMqq5GyYRbiIVIWP">игра бога</a></li>
+            <li><a href="https://youtu.be/j-56tTm3AXw?si=PuCYTSy5WYABsXI_">идеальный мир</a></li>
+            <li><a href="https://youtu.be/EM8I_SiTa90?si=p2EghG9Gr61imJaf">голос времени</a></li>
+            <li><a href="https://youtu.be/WcIEUMgWO5U?si=ryB_h13o_4QSxBKn">тринадцать огней</a></li>
+            <li id="season6"><a href="https://youtu.be/ygqR7g_0M5o?si=Y8yvxqve45U5rh0w">последнаяя реальность</a></li>
+            <li><a href="https://youtu.be/380Q7gLWGvk?si=0C6fsn5aDWPryljY">сердце вселенной</a></li>
         </ol>
     </body>
 </html>
