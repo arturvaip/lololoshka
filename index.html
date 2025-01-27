@@ -4,6 +4,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
         <style>
+            .desktop-content, .mobile-content {
+              display: none;
+            }
+
             a {
                 color: #32a9e0;
                 text-decoration: none;
@@ -265,44 +269,56 @@
             } else {
               alert("приветсвую тебя " + one + " на сайте путеводитель по лололошке");
             }
+
+            if (window.innerWidth <= 768) {
+             document.querySelector('.mobile-content').style.display = 'block';
+            } else {
+             document.querySelector('.desktop-content').style.display = 'block';
+            }
         </script>
+        <div class="desktop-content"></div>
+         <h1>список сезонов для просмотра</h1>
+         <ol>
+             <li>
+                 <a href="https://youtu.be/poIBDWp0fLI?si=J35-9PJvQhSuh7LC">новое поколение</a>
+                 <div class="season-description">Лололошка попадает в новый мир, где ему предстоит выбрать, довериться ли дракону или таинственному магу. От его выбора зависит судьба этого мира и соседних миров.</div>
+             </li>
+             <li id="season2">
+                 <a href="https://youtu.be/070yG9XD4Ps?si=TMqq5GyYRbiIVIWP">игра бога</a>
+                 <div class="season-description">Лололошка оказывается в новом мире, где встречает магов и странных существ. Ему предстоит разгадать тайну Древа Жизни и решить, кому можно доверять.</div>
+             </li>
+             <li>
+                 <a href="https://youtu.be/j-56tTm3AXw?si=PuCYTSy5WYABsXI_">идеальный мир</a>
+                 <div class="season-description">Лололошка попадает в пустой мир, окружённый загадочным куполом. Все верят, что за ним нет ничего, но Лололошке предстоит доказать обратное и спасти мир от неизбежной опасности, скрытой под защитой богинь Ала и Тера</div>
+             </li>
+             <li>
+                 <a href="https://youtu.be/EM8I_SiTa90?si=p2EghG9Gr61imJaf">голос времени</a>
+                 <div class="season-description">Лололошка попадает в мир, который кажется идеальным, но вскоре понимает, что это лишь обман. Кто стоит за этим, и какая угроза грозит всем мирам?</div>
+             </li>
+             <li>
+                 <a href="https://youtu.be/WcIEUMgWO5U?si=ryB_h13o_4QSxBKn">тринадцать огней</a>
+                 <div class="season-description">Тайны прошлого оживают, когда Лололошка отправляется на поиски легендарных огней. Но готовы ли вы узнать, что скрывается за их сиянием?</div>
+             </li>
+             <li id="season6">
+                 <a href="https://youtu.be/ygqR7g_0M5o?si=Y8yvxqve45U5rh0w">последнаяя реальность</a>
+                 <div class="season-description">Лололошка сталкивается с миром, где реальность рушится на глазах. Сможет ли он найти путь к спасению или всё обречено?</div>
+             </li>
+             <li>
+                 <a href="https://youtu.be/380Q7gLWGvk?si=0C6fsn5aDWPryljY">сердце вселенной</a>
+                 <div class="season-description">Лололошка вместе с Джоном отправляются в новое приключение, чтобы раскрыть тайну Искры ✨. Но это только начало... Дальше — ещё больше! </div>
+             </li>
+             <li>
+                 <a href="https://www.youtube.com/watch?v=-UKaFXU5zbE&list=PLpYwltiByWUtN91BU99_CAxyCh-er8wru">Точка Невозврата</a>
+                 <div class="season-description">Лололошка попадает в заброшенный, не так давно покинутый мир. Пытаясь понять, что с ним произошло, он будет исследовать его вместе со Стариной Временем.</div>
+             </li>
+         </ol>
+      </div>
 
-        <h1>список сезонов для просмотра</h1>
-        <ol>
-            <li>
-                <a href="https://youtu.be/poIBDWp0fLI?si=J35-9PJvQhSuh7LC">новое поколение</a>
-                <div class="season-description">Лололошка попадает в новый мир, где ему предстоит выбрать, довериться ли дракону или таинственному магу. От его выбора зависит судьба этого мира и соседних миров.</div>
-            </li>
-            <li id="season2">
-                <a href="https://youtu.be/070yG9XD4Ps?si=TMqq5GyYRbiIVIWP">игра бога</a>
-                <div class="season-description">Лололошка оказывается в новом мире, где встречает магов и странных существ. Ему предстоит разгадать тайну Древа Жизни и решить, кому можно доверять.</div>
-            </li>
-            <li>
-                <a href="https://youtu.be/j-56tTm3AXw?si=PuCYTSy5WYABsXI_">идеальный мир</a>
-                <div class="season-description">Лололошка попадает в пустой мир, окружённый загадочным куполом. Все верят, что за ним нет ничего, но Лололошке предстоит доказать обратное и спасти мир от неизбежной опасности, скрытой под защитой богинь Ала и Тера</div>
-            </li>
-            <li>
-                <a href="https://youtu.be/EM8I_SiTa90?si=p2EghG9Gr61imJaf">голос времени</a>
-                <div class="season-description">Лололошка попадает в мир, который кажется идеальным, но вскоре понимает, что это лишь обман. Кто стоит за этим, и какая угроза грозит всем мирам?</div>
-            </li>
-            <li>
-                <a href="https://youtu.be/WcIEUMgWO5U?si=ryB_h13o_4QSxBKn">тринадцать огней</a>
-                <div class="season-description">Тайны прошлого оживают, когда Лололошка отправляется на поиски легендарных огней. Но готовы ли вы узнать, что скрывается за их сиянием?</div>
-            </li>
-            <li id="season6">
-                <a href="https://youtu.be/ygqR7g_0M5o?si=Y8yvxqve45U5rh0w">последнаяя реальность</a>
-                <div class="season-description">Лололошка сталкивается с миром, где реальность рушится на глазах. Сможет ли он найти путь к спасению или всё обречено?</div>
-            </li>
-            <li>
-                <a href="https://youtu.be/380Q7gLWGvk?si=0C6fsn5aDWPryljY">сердце вселенной</a>
-                <div class="season-description">Лололошка вместе с Джоном отправляются в новое приключение, чтобы раскрыть тайну Искры ✨. Но это только начало... Дальше — ещё больше! </div>
-            </li>
-            <li>
-               <a href="https://www.youtube.com/watch?v=-UKaFXU5zbE&list=PLpYwltiByWUtN91BU99_CAxyCh-er8wru">Точка Невозврата</a>
-               <div class="season-description">Лололошка попадает в заброшенный, не так давно покинутый мир. Пытаясь понять, что с ним произошло, он будет исследовать его вместе со Стариной Временем.</div>
-            </li>
-        </ol>
-
+      <div class="mobile-content">
+        <h1>
+            попытка номер 1
+        </h1>
+      </div>
         <div style="height: 500px;"></div>
     </body>
 </html>
