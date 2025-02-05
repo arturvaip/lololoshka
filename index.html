@@ -262,7 +262,7 @@
 
         <script>
             let one = prompt("пожалуйста введите своё имя");
-            if (one.trim() === "") {
+            if (!one || one.trim() === "") {
                 alert("это же так тяжело да?");
             } else if (one === "влад") {
                alert("специальный сайт для фанатов ло-фд");
@@ -270,13 +270,16 @@
               alert("приветсвую тебя " + one + " на сайте путеводитель по лололошке");
             }
 
-            if (window.innerWidth <= 768) {
-             document.querySelector('.mobile-content').style.display = 'block';
-            } else {
-             document.querySelector('.desktop-content').style.display = 'block';
+            function updateView() {
+               const isMobile = window.innerWidth <= 768;
+               document.querySelector('.mobile-content').style.display = isMobile ? 'block' : 'none';
+               document.querySelector('.desktop-content').style.display = isMobile ? 'none' : 'block';
             }
+            
+              window.addEventListener("DOMContentLoaded", updateView);
+              window.addEventListener("resize", updateView);
         </script>
-        <div class="desktop-content"></div>
+        <div class="desktop-content">
          <h1>список сезонов для просмотра</h1>
          <ol>
              <li>
@@ -315,10 +318,9 @@
       </div>
 
       <div class="mobile-content">
-        <h1>
-            попытка номер 1
-        </h1>
-      </div>
+         <h1>Версия для телефонов</h1>
+         <p>Этот текст виден только на мобильных устройствах.</p>
+       </div>
         <div style="height: 500px;"></div>
     </body>
 </html>
