@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
         <style>
-            .desktop-content, .mobile-content {
+            .desktop-content,{
               display: none;
             }
 
@@ -140,45 +140,6 @@
                 height: 500px;
             }
 
-            @media (max-width: 768px) {
-                body {
-                    background-image: url(https://i.pinimg.com/originals/53/55/d9/5355d9b431afa61dd81062290ce009fe.jpg); 
-                }
-
-                li::before {
-                    top: -50px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    width: 200px;
-                    height: 200px;
-                }
-
-                #season2::before, #season6::before {
-                    width: 250px;
-                    height: 150px;
-                }
-
-                li {
-                    padding-bottom: 8%;
-                    margin-bottom: 8%;
-                }
-
-                h1 {
-                    font-size: 28px;
-                }
-
-                ol {
-                    font-size: 28px;
-                }
-            }
-
-            @media (min-width: 769px) {
-                body {
-                    background-image: url(https://celes.club/uploads/posts/2023-12/1702973682_celes-club-p-oboi-s-lololoshkoi-vkontakte-4.jpg); 
-                    background-size: 90%;
-                }
-            }
-
             #preloader {
                 position: fixed;
                 top: 0;
@@ -240,6 +201,9 @@
                 display: block;
             }
 
+            .mobile-content {}
+                
+
         </style>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-HD04WF6XB5"></script>
         <script>
@@ -279,8 +243,8 @@
                document.querySelector('.desktop-content').style.display = isMobile ? 'none' : 'block';
             }
             
-              window.addEventListener("DOMContentLoaded", updateView);
-              window.addEventListener("resize", updateView);
+            window.addEventListener("DOMContentLoaded", updateView);
+            window.addEventListener("resize", updateView);
         </script>
         <div class="desktop-content">
          <h1>список сезонов для просмотра</h1>
